@@ -1,13 +1,8 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.heading {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6d/Star_Wars_Logo_2.svg);
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
