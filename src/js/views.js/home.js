@@ -12,10 +12,21 @@ export class Home extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className="heading"> </div>
-                <div className="navbar"> <NavBar /> </div>
-                <div className="cards"> <Card /> </div>
+            <NavBar />
+                <div className="charCards"> 
+                    {this.state.char.length > 1 ? (
+                        this.state.char.map((character, cardIndex) => {
+                            return (
+                                <Card key={cardIndex} name={character.name} />
+                            )
+                        })
+                    ) : (
+                        <h1>Loading...</h1>
+                    )}
+                    :
+                </div>
+                <Planets />
             </div>
-        )
+        );
     }
 }
